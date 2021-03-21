@@ -32,7 +32,7 @@ package com.eleven.Q15_三数之和.A1;
 import java.util.*;
 
 /** 解法1
- * 暴力求解 O(n^3)
+ * 暴力求解 O(n^3), 超时
  * 3次 loop 枚举
  */
 
