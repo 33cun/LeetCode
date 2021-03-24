@@ -11,13 +11,15 @@ package com.eleven.Q206_反转链表.A1;
 //你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
 // Related Topics 链表
 
-/** 迭代
- * O(n)
+/** 双指针迭代
+ * 时间 O(n)，空间 O(1)
  * 使用临时指针将指针反转
  */
 
 public class Solution {
     public ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null) return head;
+
         ListNode tmp = null, prev = null, cur = head;
 
         while (cur != null) {
@@ -28,9 +30,5 @@ public class Solution {
         }
 
         return prev;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
